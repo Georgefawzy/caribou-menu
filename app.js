@@ -5,7 +5,7 @@
   /* ---------- i18n ---------- */
   var T = {
     ar: {
-      title: "دليل المنيو", subtitle: "للرد السريع على أسئلة العملاء",
+      title: "Menu Guide", subtitle: "للرد السريع على أسئلة العملاء",
       searchPh: "ابحث بالاسم أو بالمكوّن (كراميل، مارشميلو، سنيكرز…)",
       footNote: "أي معلومة مش مكتوبة في المنيو (حساسية، سعرات، مكونات إضافية) ارجع فيها للمسؤول قبل ما ترد على العميل.",
       all: "الكل", coffee: "فيه قهوة", nocoffee: "بدون قهوة", hot: "ساخن", iced: "مثلج", blended: "ممزوج", smoothie: "سموزي",
@@ -81,7 +81,7 @@
   function renderStatic() {
     var d = document.documentElement;
     d.lang = state.lang; d.dir = state.lang === "ar" ? "rtl" : "ltr";
-    document.title = (state.lang === "ar" ? "دليل المنيو — للموديريشن" : "Menu Guide — Moderation");
+    document.title = "Menu Guide";
     document.querySelectorAll("[data-i18n]").forEach(function (n) { n.textContent = t(n.getAttribute("data-i18n")); });
     document.querySelectorAll("[data-i18n-ph]").forEach(function (n) { n.placeholder = t(n.getAttribute("data-i18n-ph")); });
     el("langBtn").textContent = state.lang === "ar" ? "EN" : "عربي";

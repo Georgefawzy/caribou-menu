@@ -1,6 +1,6 @@
 {
-  "name": "دليل المنيو — Moderation",
-  "short_name": "دليل المنيو",
+  "name": "Menu Guide",
+  "short_name": "Menu Guide",
   "lang": "ar",
   "dir": "rtl",
   "start_url": "./",
@@ -8,5 +8,5 @@
   "display": "standalone",
   "background_color": "#f6f8fc",
   "theme_color": "#1b3a73",
-  "icons": [{ "src": "img/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+  "icons": [{ "src": "img/logo.png", "sizes": "240x240", "type": "image/png", "purpose": "any" }]
 }
