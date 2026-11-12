@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>دليل المنيو — للموديريشن</title>
+  <meta name="theme-color" content="#1b3a73">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">☕</span>
+        <div>
+          <h1 data-i18n="title">دليل المنيو</h1>
+          <p class="brand-sub" data-i18n="subtitle">للرد السريع على أسئلة العملاء</p>
+        </div>
+        <button id="langBtn" class="pill ghost" type="button" aria-label="Language">EN</button>
+      </div>
+
+      <div class="search">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M21 21l-4.3-4.3M10.5 18a7.5 7.5 0 110-15 7.5 7.5 0 010 15z"/></svg>
+        <input id="q" type="search" autocomplete="off" enterkeyhint="search" data-i18n-ph="searchPh" placeholder="ابحث بالاسم أو بالمكوّن (كراميل، مارشميلو، سنيكرز…)">
+        <button id="clearQ" class="clear" type="button" aria-label="مسح" hidden>×</button>
+      </div>
+
+      <nav class="tabs" id="tabs" aria-label="الأقسام"></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="filters" aria-label="فلاتر">
+      <div class="chip-row" id="quickChips"></div>
+      <div class="chip-row" id="filterChips"></div>
+      <p class="count" id="count" aria-live="polite"></p>
+    </section>
+
+    <div id="sections"></div>
+
+    <section id="custom" class="block"></section>
+    <section id="faq" class="block"></section>
+  </main>
+
+  <footer>
+    <p id="footMeta"></p>
+    <p data-i18n="footNote">أي معلومة مش مكتوبة في المنيو (حساسية، سعرات، مكونات إضافية) ارجع فيها للمسؤول قبل ما ترد على العميل.</p>
+  </footer>
+
+  <dialog id="dlg" aria-labelledby="dlgTitle">
+    <article class="sheet" id="sheet"></article>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

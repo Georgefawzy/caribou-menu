@@ -1,0 +1,12 @@
+{
+  "name": "دليل المنيو — Moderation",
+  "short_name": "دليل المنيو",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f8fc",
+  "theme_color": "#1b3a73",
+  "icons": [{ "src": "img/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
