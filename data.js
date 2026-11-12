@@ -317,3 +317,552 @@ window.FAQ = [
   { qAr: "القهوة التركي بتتقدم إزاي؟", qEn: "How is Turkish coffee served?", aAr: "بن ناعم بيتغلي في الإبريق ويتقدم في فنجان، والسكر حسب الطلب. سنجل 90 / دبل 110.", aEn: "Finely ground, boiled in a pot and served in a cup; sugar to taste. Single 90 / Double 110." },
   { qAr: "القهوة الطازجة (Freshly Brewed) بتتغير؟", qEn: "Is the brewed coffee rotating?", aAr: "أيوه، بنبدّل تشكيلة من القهوة العادية والموسمية ونحضّر قهوة جديدة كل ساعة.", aEn: "Yes — we rotate regular & seasonal coffees and brew fresh every hour." }
 ];
+
+
+/* ============================================================
+   الفروع / العروض / الردود الجاهزة — مصدرها ملف FAQ بتاع التسويق (12-11-2026)
+   لو ربطت الشيت (config.js) البيانات دي بتتحدّث منه تلقائي، وده بيشتغل كنسخة احتياطية.
+   ============================================================ */
+window.REGION_AR = { "Cairo": "القاهرة", "October & Zayed": "أكتوبر وزايد", "Alexandria": "الإسكندرية" };
+window.BRANCHES = [
+ {
+  "region": "Cairo",
+  "en": "Concord Plaza – New Cairo",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/FVBp3bcVaZARGJ8B7",
+  "hours": "",
+  "phone": "",
+  "area": "New Cairo",
+  "lat": 30.0250513,
+  "lng": 31.4836011
+ },
+ {
+  "region": "Cairo",
+  "en": "City Stars – Nasr City",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/7A8YvsLHmVuoEbR27",
+  "hours": "",
+  "phone": "",
+  "area": "Nasr City",
+  "lat": 30.0741449,
+  "lng": 31.3441701
+ },
+ {
+  "region": "Cairo",
+  "en": "Downtown – Adly Street",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/oXCtYcaf1pnkyL2V8",
+  "hours": "",
+  "phone": "",
+  "area": "Adly Street",
+  "lat": 30.0510357,
+  "lng": 31.2443933
+ },
+ {
+  "region": "Cairo",
+  "en": "East Walk Mall – New Cairo",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/RMKyjLAiFoavzpZd7",
+  "hours": "",
+  "phone": "",
+  "area": "New Cairo",
+  "lat": 30.0023758,
+  "lng": 31.5035148
+ },
+ {
+  "region": "Cairo",
+  "en": "Garden City",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/XDyaFtLtfks1QJ8Y7",
+  "hours": "",
+  "phone": "",
+  "area": "Garden City",
+  "lat": 30.0356076,
+  "lng": 31.233791
+ },
+ {
+  "region": "Cairo",
+  "en": "Heliopolis",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/sKDaWDDDWXzmzoAH9",
+  "hours": "",
+  "phone": "",
+  "area": "Heliopolis",
+  "lat": 30.0873802,
+  "lng": 31.3084409
+ },
+ {
+  "region": "Cairo",
+  "en": "Maadi – Street 18",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/z3xo2tSEKgUUpHWt8",
+  "hours": "",
+  "phone": "",
+  "area": "Maadi",
+  "lat": 29.9582333,
+  "lng": 31.2691318
+ },
+ {
+  "region": "Cairo",
+  "en": "Maadi – El Zeini Tower",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/RHr23s9S7STLuGKi8",
+  "hours": "",
+  "phone": "",
+  "area": "Maadi",
+  "lat": 29.9600138,
+  "lng": 31.2510426
+ },
+ {
+  "region": "Cairo",
+  "en": "Maadi Royal – Zahraa El Maadi",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/Pt5qZs8edzysha758",
+  "hours": "",
+  "phone": "",
+  "area": "Zahraa El Maadi",
+  "lat": 29.9692117,
+  "lng": 31.3242531
+ },
+ {
+  "region": "Cairo",
+  "en": "Madinaty – East Hub",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/2bpQHQGGb5avnP7G7",
+  "hours": "",
+  "phone": "",
+  "area": "Madinaty",
+  "lat": 30.0736435,
+  "lng": 31.6707532
+ },
+ {
+  "region": "Cairo",
+  "en": "Medical Park – New Cairo",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/8gM55ptM7rN3UeZM7",
+  "hours": "",
+  "phone": "",
+  "area": "New Cairo",
+  "lat": 30.0190352,
+  "lng": 31.4346672
+ },
+ {
+  "region": "Cairo",
+  "en": "Military Academy – El Nozha",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/tq72Dd5g9WMvMZ5S8",
+  "hours": "",
+  "phone": "",
+  "area": "El Nozha",
+  "lat": 30.103943,
+  "lng": 31.3486374
+ },
+ {
+  "region": "Cairo",
+  "en": "Sheraton Heliopolis",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/iFcbS5DbkdDZxHgH8",
+  "hours": "",
+  "phone": "",
+  "area": "Sheraton",
+  "lat": 30.1025418,
+  "lng": 31.3725758
+ },
+ {
+  "region": "Cairo",
+  "en": "Zamalek",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/CwmiJ13sHnqGGztJ6",
+  "hours": "",
+  "phone": "",
+  "area": "Zamalek",
+  "lat": 30.0713446,
+  "lng": 31.2219861
+ },
+ {
+  "region": "Cairo",
+  "en": "El Shorouk",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/ujG8jJJHvJJZqsBZ9",
+  "hours": "",
+  "phone": "",
+  "area": "El Shorouk",
+  "lat": 30.1499492,
+  "lng": 31.6272582
+ },
+ {
+  "region": "October & Zayed",
+  "en": "Mohandeseen – Lebanon Street",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/yJN5RTwQu3MBvtYD7",
+  "hours": "",
+  "phone": "",
+  "area": "Mohandeseen",
+  "lat": 30.0551387,
+  "lng": 31.1993551
+ },
+ {
+  "region": "October & Zayed",
+  "en": "Messha Square – Dokki",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/owJ8vcb6ASZXwafS8",
+  "hours": "",
+  "phone": "",
+  "area": "Dokki",
+  "lat": 30.0350031,
+  "lng": 31.214542
+ },
+ {
+  "region": "October & Zayed",
+  "en": "Dandy Mall",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/s3x5cMkpcq4MUZgV7",
+  "hours": "",
+  "phone": "",
+  "area": "Km 28 Cairo–Alex Desert Rd",
+  "lat": 30.0635803,
+  "lng": 31.027351
+ },
+ {
+  "region": "October & Zayed",
+  "en": "Agora Mall – Sheikh Zayed",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/SV3ZCEGuKhWG3FmV9",
+  "hours": "",
+  "phone": "",
+  "area": "Sheikh Zayed",
+  "lat": 30.0313436,
+  "lng": 30.9932167
+ },
+ {
+  "region": "October & Zayed",
+  "en": "Bermillan Mall – Sheikh Zayed",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/4wm8EUu1wjaVWBTL6",
+  "hours": "",
+  "phone": "",
+  "area": "Sheikh Zayed",
+  "lat": 30.0290142,
+  "lng": 31.0184826
+ },
+ {
+  "region": "October & Zayed",
+  "en": "Smart Village",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/dbPSwDhgy9P2oZng9",
+  "hours": "",
+  "phone": "",
+  "area": "Smart Village",
+  "lat": 30.0770625,
+  "lng": 31.0219058
+ },
+ {
+  "region": "October & Zayed",
+  "en": "Smart Village 2",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/aibU6NuQ7QNTYraE6",
+  "hours": "",
+  "phone": "",
+  "area": "Smart Village",
+  "lat": 30.0734636,
+  "lng": 31.0191941
+ },
+ {
+  "region": "October & Zayed",
+  "en": "Gamal Abdel Nasser Axis – 6th of October",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/L3jRAkEDf6hBcb7L7",
+  "hours": "",
+  "phone": "",
+  "area": "6th of October",
+  "lat": 29.9934678,
+  "lng": 30.9482657
+ },
+ {
+  "region": "October & Zayed",
+  "en": "Mobil Hadayeaa October",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/wnFoE4KUYhFAwQi8A",
+  "hours": "",
+  "phone": "",
+  "area": "Hadayek October",
+  "lat": 29.9306545,
+  "lng": 31.0435924
+ },
+ {
+  "region": "Alexandria",
+  "en": "Saudi German Hospital",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/VV6u7DFxr51AovRu8",
+  "hours": "",
+  "phone": "",
+  "area": "Alexandria",
+  "lat": 31.0597448,
+  "lng": 29.7185192
+ },
+ {
+  "region": "Alexandria",
+  "en": "City Centre Alexandria",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/fBcjUnHLm8LWnaUU6",
+  "hours": "",
+  "phone": "",
+  "area": "Km 6 Alex–Cairo Desert Rd",
+  "lat": 31.1697447,
+  "lng": 29.9314161
+ },
+ {
+  "region": "Alexandria",
+  "en": "Smouha Square",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/7KW7zvmeWLEFPj2F8",
+  "hours": "",
+  "phone": "",
+  "area": "Smouha",
+  "lat": 31.2138511,
+  "lng": 29.9447067
+ },
+ {
+  "region": "Alexandria",
+  "en": "El Shatby",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/jwt7nzt1XXcpJBJw6",
+  "hours": "",
+  "phone": "",
+  "area": "El Shatby",
+  "lat": 31.2111075,
+  "lng": 29.9192329
+ },
+ {
+  "region": "Alexandria",
+  "en": "Green Plaza – Smouha",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/qkXHWpigGZw434wy5",
+  "hours": "",
+  "phone": "",
+  "area": "Smouha",
+  "lat": 31.2063745,
+  "lng": 29.9653439
+ },
+ {
+  "region": "Alexandria",
+  "en": "Kafr Abdo Street",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/cxhxb6kAEGfaHQJX6",
+  "hours": "",
+  "phone": "",
+  "area": "Kafr Abdo",
+  "lat": 31.2241602,
+  "lng": 29.9526934
+ },
+ {
+  "region": "Alexandria",
+  "en": "Saint Laurent",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/Jtq1Dvo7HGwrwRFG7",
+  "hours": "",
+  "phone": "",
+  "area": "Alexandria",
+  "lat": 31.2523205,
+  "lng": 29.973613
+ },
+ {
+  "region": "Alexandria",
+  "en": "Stanley",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/zRVEjBBFCsedU95p6",
+  "hours": "",
+  "phone": "",
+  "area": "Stanley",
+  "lat": 31.2336222,
+  "lng": 29.9492468
+ },
+ {
+  "region": "Alexandria",
+  "en": "Alex West",
+  "ar": "",
+  "address": "",
+  "map": "https://maps.app.goo.gl/jfnjJjDu7zwuPfKq9",
+  "hours": "",
+  "phone": "",
+  "area": "Alex West",
+  "lat": 31.0667731,
+  "lng": 29.736209
+ }
+];
+window.OFFERS = [
+ {
+  "name": "Chicken Tandoori Combo",
+  "includes": "Chicken Tandoori Sandwich + Medium Coffee",
+  "price": 310
+ },
+ {
+  "name": "Tuna Club Combo",
+  "includes": "Tuna Club Sandwich + Medium Coffee",
+  "price": 320
+ },
+ {
+  "name": "Dueto Club Combo",
+  "includes": "Dueto Club Sandwich + Medium Coffee",
+  "price": 320
+ },
+ {
+  "name": "Cottage Cheese Combo",
+  "includes": "Cottage Cheese Sandwich + Medium Coffee",
+  "price": 270
+ },
+ {
+  "name": "Blueberry Cheesecake Combo",
+  "includes": "Blueberry Cheesecake + Medium Coffee",
+  "price": 290
+ },
+ {
+  "name": "Raspberry Cheesecake Combo",
+  "includes": "Raspberry Cheesecake + Medium Coffee",
+  "price": 290
+ },
+ {
+  "name": "Chocolate Fudge Combo",
+  "includes": "Chocolate Fudge Cake + Medium Coffee",
+  "price": 285
+ },
+ {
+  "name": "Apple Tart Combo",
+  "includes": "Apple Tart + Medium Coffee",
+  "price": 265
+ },
+ {
+  "name": "Plain Croissant Combo",
+  "includes": "Plain Croissant + Medium Coffee",
+  "price": 215
+ },
+ {
+  "name": "Cheese Croissant Combo",
+  "includes": "Cheese Croissant + Medium Coffee",
+  "price": 225
+ },
+ {
+  "name": "Thyme & Cheese Croissant Combo",
+  "includes": "Thyme & Cheese Croissant + Medium Coffee",
+  "price": 225
+ },
+ {
+  "name": "Cheese & Olives Croissant Combo",
+  "includes": "Cheese & Olives Croissant + Medium Coffee",
+  "price": 225
+ }
+];
+window.REPLIES = [
+ {
+  "id": "menu",
+  "cat": "Menu",
+  "qAr": "منيو",
+  "qEn": "Menu",
+  "variants": [
+   {
+    "label": "عربي",
+    "text": "أهلاً بحضرتك🥰\nممكن تشوف المنيو من هنا يا فندم https://drive.google.com/drive/folders/1R4DQYkH9BbrRPvS3UlF7lCCLMAfCXyLr"
+   },
+   {
+    "label": "English",
+    "text": "Hello dear🥰♥️ You can see our menu through https://drive.google.com/drive/folders/1R4DQYkH9BbrRPvS3UlF7lCCLMAfCXyLr"
+   }
+  ]
+ },
+ {
+  "id": "wednesday",
+  "cat": "Offers",
+  "qAr": "عرض الأربعاء",
+  "qEn": "Wednesday offer",
+  "variants": [
+   {
+    "label": "Version 1",
+    "text": "Hello Dear 🥰\n\nHere are our Wednesday offers:\n\nBuy 1 Coffee, Get 1 FREE\nor\nBuy any Sandwich, Get a FREE Coffee\n\nCan't wait to see you today 💖"
+   },
+   {
+    "label": "Version 2 (Talabat / branch)",
+    "text": "Hello Dear 🥰\n\nHere are our Wednesday offers:\n\nBuy 1 Coffee, Get 1 FREE\nBuy any Sandwich, Get a FREE Coffee\n\nYou can enjoy our offers by ordering through Talabat or visiting your nearest branch! 🤍\n\nCan't wait to see you today 💖"
+   }
+  ]
+ },
+ {
+  "id": "delivery",
+  "cat": "Delivery",
+  "qAr": "في توصيل؟",
+  "qEn": "Delivery / Order",
+  "variants": [
+   {
+    "label": "عربي",
+    "text": "أهلاً بحضرتك 🥰\nتقدري تطلبي الأوردر بسهولة من خلال Talabat أو Breadfast"
+   },
+   {
+    "label": "English",
+    "text": "Hello Dear 🥰 You can easily place your order for delivery through Talabat or Breadfast"
+   }
+  ]
+ },
+ {
+  "id": "hiring",
+  "cat": "Hiring",
+  "qAr": "في فرص توظيف؟",
+  "qEn": "Hiring / Jobs",
+  "variants": [
+   {
+    "label": "CV + WhatsApp",
+    "text": "أهلاً بحضرتك 🥰\nممكن تبعتلنا ال CV علي memam@investmentgate.net or WhatsApp +20 122 6380997"
+   },
+   {
+    "label": "WhatsApp",
+    "text": "أهلاً بحضرتك 🥰\nتقدر تبعت لنا على الرقم ده: 01226380997، وهنبلغك كل تفاصيل الوظيفة"
+   }
+  ]
+ },
+ {
+  "id": "wifi",
+  "cat": "Wifi",
+  "qAr": "في واي فاي؟",
+  "qEn": "Wi-Fi",
+  "variants": [
+   {
+    "label": "عربي",
+    "text": "أهلاً بحضرتك🥰♥️ متاح خدمة الـ WiFi مجانآ فى كل فروعنا وهنستناك تشرفنا فى اقرب وقت و استمتع بقهوة كاريبو 🤩"
+   },
+   {
+    "label": "English",
+    "text": "Hello dear🥰♥️ Wi-Fi service it's available for Free in all our branches, We are waiting for you 🤩"
+   }
+  ]
+ }
+];
